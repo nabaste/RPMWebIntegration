@@ -1,16 +1,13 @@
-export const defaultAvatar = {
+export let defaultAvatar = {
   id: "avatar",
   type: "gltf",
-  // url: "assets/models/gordonfreeman.glb",
-  // url: "assets/models/dance.glb",
-  url: "https://d1a370nemizbjq.cloudfront.net/3a487cf1-13d6-4f2a-b2a1-237ea68f5619.glb",
+  url: "",
 };
 
 export const animContainer = {
   id: "animContainer",
   type: "gltf",
   url: "assets/models/dance.glb",
-  // url: "https://d1a370nemizbjq.cloudfront.net/3a487cf1-13d6-4f2a-b2a1-237ea68f5619.glb",
 };
 
 // To see available morph targets and animations, view your avatar on: https://gltf-viewer.donmccurdy.com/
@@ -44,11 +41,17 @@ export const AvatarSettings = {
 
 export const DOMSettings = {
   avatarDivID: "3d_avatar", // <- make sure you have a div with this id when deploying
-  canvasWidth: 900,
-  canvasHeight: 1200,
+  canvasWidth: 1280,
+  canvasHeight: 800,  
 };
 
 export const RendererSettings = {
   alpha: true,
   antialias: true,
 };
+
+export const RPMSettings = {
+  subdomain: "demo",
+  iframeWidth: 1280,    //RPM reccomended iFrame size
+  iframeHeight: 800,
+}
